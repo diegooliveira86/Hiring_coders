@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/65667d90e2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+    <title>.:Minha Página Pessoal:.</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="./minha_logo3.png" alt="Diego dos Anjos">
+        </div>
+        <ul>
+            <li>
+                <a target="blank" href="">Github</a>
+            </li>
+            <li>
+                <a target="blank" href="mailto:falecom.diagoanjos@gmail.com">Email</a>
+            </li>
+            <li>
+                <a target="blank" href="https://wa.me/71991136787">Celular</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="container">
+            <div class="name">
+                <h1>Diego dos Anjos</h1>
+                <h5>Fullstack Developer</h5>
+            </div>
+
+            <div onclick="displayAbout()" id="arrow">
+                <i id="animation" class="fa-solid fa-sort-down"></i>
+            </div>
+            <div style="display: none" id="about">
+                <p>
+                    Nordestino, Baiano, Soteropolitano, <strong> retado </strong> (não arretado...)
+                    Bebedor de café e outras especiarias viciado em saber o porque de tudo
+                    Apaixonado por tecnologia desde sempre, cursando o 3° semestre de Análise e Desenvolvimento de
+                    Sistemas "mexedor" de Corel e Photoshop <strong>Fullstack Developer, HTML, CSS, JavaScript, C/C++, Ruby</strong>
+                </p>
+            </div>
+            <div class="form">
+                <div>
+                    <p>Deixe seu contato</p>
+                </div>
+                <form action="">
+                    <input type="text" placeholder="Seu Melhor e-mail :)">
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script>
+        function displayAbout() {
+            var arrow = document.getElementById('animation');
+            arrow.classList.toggle('rotate');
+            var display = document.getElementById('about');
+            display.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
